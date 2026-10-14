@@ -1,0 +1,264 @@
+/* Genel Ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f141c;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* Üst Menü (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #161b22;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.logo span {
+    color: #d9a036; /* Şık İnşaat Sarısı/Altın Tonu */
+}
+
+.nav-links a {
+    color: #c9d1d9;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d9a036;
+}
+
+/* Hero / Giriş Alanı */
+.hero {
+    background: linear-gradient(rgba(15, 20, 28, 0.85), rgba(15, 20, 28, 0.95)), 
+                url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?q=80&w=1200') center/cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #d9a036;
+    color: #0f141c;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #f0b441;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+}
+
+/* İstatistik Alanı */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 8%;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 32px;
+    color: #d9a036;
+}
+
+.stat-item p {
+    color: #8b949e;
+}
+
+/* Hakkımızda */
+.about {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #0f141c;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    color: #8b949e;
+    font-size: 16px;
+}
+
+/* Projeler Grid Yapısı */
+.projects {
+    padding: 60px 8%;
+    background-color: #161b22;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #0f141c;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #d9a036;
+}
+
+.project-img-placeholder {
+    font-size: 40px;
+    color: #d9a036;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #8b949e;
+}
+
+/* İletişim */
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #8b949e;
+    margin-bottom: 40px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.c-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.c-card i {
+    font-size: 30px;
+    color: #d9a036;
+    margin-bottom: 15px;
+}
+
+.c-card h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.c-card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #090d12;
+    color: #484f58;
+    font-size: 13px;
+    border-top: 1px solid #21262d;
+}
